@@ -11,3 +11,8 @@ MIT original sources, source ZIP, upstream credits, compatibility check, downloa
 
 ## Visual authority
 Extend the existing app's monochrome paper/ink, self-hosted Manrope and large type. The site is a readable, restrained project manual with a device preview; no new brand world or comp round. Code-led continuation of the established visual identity.
+
+## Optional photo screensaver guidance
+After the main app setup, a closed native disclosure at the bottom of the page offers “Kindle ekran koruyucu özelleştirme” / its English equivalent. Three short actions tell the user to upload a photo to the same Codex or Claude Code chat, request a preview, then approve applying it and check the result from Home with the power button. The main prompt section keeps only menu-icon/Home-cover customization; its raw screensaver guide link is removed. There is no website uploader and private photos are never published.
+
+Prompt item 9 points the agent to the local `docs/SCREENSAVER.tr.md` or `docs/SCREENSAVER.en.md` source. The guide recipe itself remains unchanged: it is an agent-guided, verified-PW2 workflow with original-file backup and restore, not an automatic screensaver installer. Public source is under GitHub author `makallete`; the site is https://kindle-daybook-makallete.netlify.app.
