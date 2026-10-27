@@ -2,7 +2,7 @@
 """Build the source download from an allowlist; never package local credentials/tools."""
 import pathlib,zipfile,hashlib
 root=pathlib.Path(__file__).resolve().parents[1]
-target=root/'website/kindle-daybook-v0.1.0-alpha.zip'
+target=root/'website/kindle-daybook-v0.1.1-alpha.zip'
 files=[]
 for folder in ['worker','kindle','scripts','docs']:
  for p in (root/folder).rglob('*'):

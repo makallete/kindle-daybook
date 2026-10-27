@@ -15,3 +15,5 @@ site/
 native-local/
 native-originals/
 worker/work/
+
+.netlify/

@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.1-alpha
+
+- Publish the bilingual project site on Netlify under makallete.
+- Update GitHub links and attribution after the account rename.
+- Include beginner setup prompts and photo screensaver guides.
+
+
 ## 0.1.0-alpha — 2026-10-27
 
 First public, self-hosted package derived from a working PW2 application.

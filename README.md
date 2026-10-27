@@ -4,7 +4,7 @@
 
 Eski Kindle’ına gündelik hayatta yeni bir iş ver: takvim, hava durumu ve isteğe bağlı yol durumu. Ekranının adını kendin seç. Cloudflare Worker senin hesabında çalışır; bilgisayarının açık kalması gerekmez.
 
-**v0.1.0-alpha — ilk topluluk sürümü.** Çalışan temel uygulama Paperwhite 2 (2013), 5.12.2.2 üzerinde doğrulandı. Genelleştirilmiş kurulum paketi henüz sıfırdan kurulmuş ikinci bir cihazda denenmedi. Diğer modeller desteklenmiş sayılmaz. Kurucu şu aşamada yalnızca 90D4 ile başlayan PW2 varyantını kabul eder.
+**v0.1.1-alpha — ilk topluluk sürümü.** Çalışan temel uygulama Paperwhite 2 (2013), 5.12.2.2 üzerinde doğrulandı. Genelleştirilmiş kurulum paketi henüz sıfırdan kurulmuş ikinci bir cihazda denenmedi. Diğer modeller desteklenmiş sayılmaz. Kurucu şu aşamada yalnızca 90D4 ile başlayan PW2 varyantını kabul eder.
 
 ## Neler var?
 
@@ -39,7 +39,7 @@ npx wrangler deploy
 
 `worker/` sunucu ve testler · `kindle/` özgün tam ekran uygulaması · `scripts/` kurucu ve araç indirme · `docs/` rehberler · `website/` statik proje sitesi ve kurgu verili demo.
 
-Amazon sistem JAR’ları, firmware, jailbreak yükleri, kitaplar, özel SSH anahtarları veya kişisel takvimler bu depoda yoktur. Home/Store değişiklikleri ayrı ve isteğe bağlıdır: [native rehber](docs/NATIVE.tr.md). Kişisel ekran koruyucu bu pakete dahil değildir.
+Amazon sistem JAR’ları, firmware, jailbreak yükleri, kitaplar, özel SSH anahtarları veya kişisel takvimler bu depoda yoktur. Home/Store değişiklikleri ayrı ve isteğe bağlıdır: [native rehber](docs/NATIVE.tr.md). Ekran koruyucu App kurucusundan ayrı uygulanır: [fotoğrafla ekran koruyucu rehberi](docs/SCREENSAVER.tr.md). Kişisel fotoğraflar pakete dahil değildir.
 
 ## Geliştirme ve katkı
 

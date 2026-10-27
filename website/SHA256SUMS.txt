@@ -1,1 +1,2 @@
 c389c6b5efbd14072594ecffea8480f16f323e82633324dcc8d0659800df35b9  kindle-daybook-v0.1.0-alpha.zip
+7f8eb600d44b4f8c8712a73019d795c34deefbcab8f489eff23fc025423c3429  kindle-daybook-v0.1.1-alpha.zip

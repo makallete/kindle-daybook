@@ -1,0 +1,18 @@
+Set up the Kindle Daybook project in this folder on my Kindle.
+
+Display name: Daybook
+Interface language: English
+
+Read README.md, docs/SETUP.en.md and, when needed, docs/NATIVE.en.md. Run the commands yourself. Ask me only for information you need and physical actions on the Kindle.
+
+1. Verify the model and firmware with read-only checks first. This package targets the validated PW2 90D4 / 5.12.2.2 only. Do not run the native installer on another model or firmware.
+2. Walk me through jailbreak, scriptlets/MKK and SSH preparation from the beginning. Assume I do not know these terms: explain the purpose of each stage, which files to download, where to copy them and what to tap on the Kindle. Follow the official KindleModding and USBNetwork guides for my model and firmware. Verify completed steps and preserve a working setup instead of repeating it.
+3. Guide me through creating a Cloudflare account or signing into my existing account; wait for me to complete sign-in and required approvals. Work in this folder. Install the required tools and run tests. Create a separate Worker in my own Cloudflare account; do not change my other projects. Set APP_NAME to the name above and APP_LANGUAGE to en. Ask for weather location only if needed.
+4. Configure my personal and optional shared iCal URLs as Cloudflare secrets. Never put private URLs or API/SSH keys in chat, source, Git or logs; have me enter secrets through a secure settings screen or terminal command. Generate a new random SCREEN_TOKEN.
+5. Verify the Worker in a browser. Run scripts/install.py with --check before --install. The installer transfers the required files to the Kindle; do not copy the entire project folder to the device. Use the same display and library launcher name.
+6. After the core app works, plan Store/Home changes with scripts/native-customize.py. Apply with backups only when factory file hashes match. List setup leftovers using scripts/cleanup.py first. Preserve books, active jailbreak/SSH components and custom recovery files; move known leftovers only into reversible archives.
+7. If I want traffic, configure my own Google Routes key and exact home/work locations. Do not enable payment or card-requiring steps automatically. If traffic access is unavailable, finish calendar and weather without invented route data.
+8. Verify the result with real device screenshots. Check the 100-second calendar return and 30-second direction return. Ask me to test Power-button exit to Home. Keep my private display URL outside Git in native-local/screen-url.txt and give me the removal/restore commands at the end.
+9. When I want a photo screensaver, read and follow https://kindle-daybook-makallete.netlify.app/screensaver.en.md. Ask for my photo; do not use sample or third-party photos. Show the crop preview, verify model/firmware compatibility and validate the original-file backup. Ask me to check actual sleep and leave restore instructions. Keep the photo and device backup out of Git.
+
+Do not bypass firmware or hash checks, install someone else's system files or use someone else's credentials. The generalized installer is alpha: stop on incompatibility and explain the missing prerequisite.

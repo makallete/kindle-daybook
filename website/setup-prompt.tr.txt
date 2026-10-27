@@ -1,0 +1,18 @@
+Bu klasördeki Kindle Daybook projesini benim Kindle’ıma kur.
+
+Ekran adı: Daybook
+Arayüz dili: Türkçe
+
+README.md, docs/KURULUM.md ve docs/NATIVE.tr.md dosyalarını oku. Kodları sen çalıştır; bana yalnızca cihazda yapmam gereken dokunuşları ve gereken bilgileri sor.
+
+1. Önce cihaz modelini ve firmware’i salt okunur biçimde doğrula. Bu paket yalnızca doğrulanmış PW2 90D4 / 5.12.2.2 için. Başka model veya sürümde native kurucuyu çalıştırma.
+2. Jailbreak, scriptlet/MKK ve SSH hazırlığını benimle adım adım tamamla. Bu terimleri bilmediğimi varsay: her aşamanın ne işe yaradığını, hangi dosyayı indireceğimi, nereye kopyalayacağımı ve Kindle’da neye dokunacağımı açıkça anlat. Model ve firmware’e uygun resmi KindleModding ve USBNetwork rehberlerini izle. Önceden tamamlanmış işlemleri doğrula ve çalışan kurulumu tekrar uygulama.
+3. Cloudflare hesabı oluşturma veya mevcut hesabıma giriş yapma adımlarında beni yönlendir; hesabıma girişi ve gerekli onayları benim tamamlamamı bekle. Bu klasörde çalış. Gerekli araçları kur ve testleri çalıştır. Kendi Cloudflare hesabımda ayrı bir Worker oluştur; başka projelerimi değiştirme. APP_NAME alanını yukarıdaki ad, APP_LANGUAGE alanını tr yap. Şehir/hava koordinatını gerekirse bana sor.
+4. Kişisel ve varsa ortak takvimimin iCal adreslerini Cloudflare secret olarak ayarla. Gizli adresleri veya API/SSH anahtarlarını sohbet, kaynak kodu, Git ya da günlük çıktısına koyma; secret girişini güvenli bir giriş ekranı veya terminal komutuyla yaptır. Yeni, rastgele SCREEN_TOKEN oluştur.
+5. Önce sunucuyu tarayıcıdan kontrol et. Sonra scripts/install.py ile önce --check, geçerse --install çalıştır. Kindle’a gereken dosyaları kurucu aktaracak; bütün proje klasörünü Kindle’a kopyalama. Uygulama ve kütüphane başlatıcısının adı aynı olsun.
+6. Temel uygulama çalışınca Store kısayolu ve sade Home için scripts/native-customize.py ile önce plan yap. Yalnızca özgün dosya karmaları eşleşirse yedek alarak uygula. Kurulum artıklarını scripts/cleanup.py ile önce listele; kitapları, çalışan jailbreak/SSH bileşenlerini ve özel kurtarma dosyalarını silme. Bilinen artıklar yalnızca geri alınabilir arşive taşınsın.
+7. Yol durumunu istiyorsam kendi Google Routes anahtarımı ve ev/iş konumlarımı ayarla. Ödeme/kart gerektiren bir adımı kendiliğinden açma. Bu özellik hazır değilse takvim ve hava durumunu tamamla; sahte rota veya süre gösterme.
+8. Sonucu gerçek cihaz ekran görüntüsüyle doğrula. Gün seçiminin 100 saniyede, elle değişen yol yönünün 30 saniyede geri dönmesini kontrol et. Güç düğmesiyle Home’a çıkışı bana denet. Özel ekran adresini Git dışında native-local/screen-url.txt dosyasında sakla; sonunda geri alma komutlarını bana ver.
+9. Ekran koruyucu için fotoğrafımı istediğimde, https://kindle-daybook-makallete.netlify.app/screensaver.tr.md rehberini oku ve uygula. Fotoğrafımı bana sor; örnek veya başkasına ait fotoğraf kullanma. Kırpılmış önizlemeyi göster; model/firmware uyumunu ve doğrulanmış özgün dosya yedeğini kontrol et. Sonucu gerçek uyku ekranında bana doğrulat ve geri alma yolunu bırak. Fotoğrafı veya cihaz yedeğini Git’e koyma.
+
+Firmware’e uymayan sistem dosyası yükleme, hash kontrolünü atlama veya başkasının anahtarlarını kullanma. Bu paketin genelleştirilmiş kurucusu alpha; uyumsuzlukta dur ve neyin eksik olduğunu açıkça söyle.
