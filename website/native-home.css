@@ -3,3 +3,6 @@
 @media(max-width:700px){.native-comparison{grid-template-columns:1fr;gap:30px}.native-example{max-width:470px;width:100%;margin:0 auto}.native-screen{min-height:462px}.native-example figcaption{font-size:12px}.native-toolbar{padding:12px 12px 9px}.native-content{padding:17px 17px}.native-stock-library{gap:12px}.native-stock-library .native-book{min-height:105px}.native-stock-panel{padding:11px 0 3px}.native-clean-library{gap:17px}.native-recent-books{gap:10px}.native-recent-books .native-book{min-height:128px}.native-app-cover strong{font-size:20px}.native-outcomes{grid-template-columns:1fr;gap:19px}.native-outcomes strong{margin-bottom:2px}.native-schematic-note{margin-bottom:24px}}
 
 .native-app-name{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Keep the longer sample title intact inside the narrow recent-book cover. */
+.native-recent-books .native-book{min-width:0;container-type:inline-size;padding:10px 3px}html[lang="tr"] .native-recent-books [data-i18n="nativeEssays"]{font-size:10px;font-size:clamp(8px,18cqw,12px);white-space:nowrap;overflow-wrap:normal;max-width:none}
