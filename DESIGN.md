@@ -154,6 +154,10 @@ Primary actions reverse paper text on ink, use the recorded action spacing and a
 
 Focus uses a visible ink outline with an offset. Hover changes the primary action to ink hover and the outlined name action to wash. Do not add elevation or motion to these states.
 
+### GitHub source and guide links
+
+The header source link is a bordered paper control with the actual GitHub Primer logo (20px), a 12px corner radius and a 42px minimum height. It uses 9px × 14px padding, a 9px icon/text gap and semibold 14px type. Its hover uses wash with a quiet gray border. Below 600px, header padding becomes 8px × 10px, the gap 7px, type 13px and logo 18px. The lower full-guide link uses the same primitive with an oval (999px) radius and wrapping label. Both keep the logo separate from the text span so TR/EN replacement preserves the icon; logo images are decorative because the adjacent label supplies the link name.
+
 ### Inputs and compatibility
 
 Inputs and selects use paper, a quiet control border and the field corner. Labels sit above fields. Compatibility feedback is readable text in the wash panel; it is not communicated by color alone. The same styling supports both the accepted and unverified-device messages.
@@ -178,7 +182,7 @@ Before/after Home diagrams use a paper field, thin ink frame, outline toolbar sy
 
 The bottom of the page includes a native disclosure, closed by default, titled “Kindle ekran koruyucu özelleştirme” in Turkish, with its English equivalent. It is used after initial setup; screensaver instructions and a raw guide link do not appear in the main prompt section. The prompt-section photo note covers the menu icon and Home cover only.
 
-The disclosure uses the existing paper/ink ruled language, with a 21px semibold summary (20px at 600px and below) and a plus/minus indicator. Its maximum width is 820px, with a 36px bottom margin (28px mobile). The expanded content introduces the task, then shows three steps: upload a photo to the same Codex/Claude Code chat; request a prepared preview; approve application, then return Home and use the power button to verify sleep-screen appearance.
+The disclosure uses the existing paper/ink ruled language, with a 21px semibold summary (20px at 600px and below) and a plus/minus indicator. Its maximum width is 820px, with a 36px bottom margin (28px mobile). The expanded content opens with the user-approved “Yukarıdaki kurulumu eksiksiz tamamladıktan sonra Kindle’ın ekran koruyucusunu da istediğin fotoğrafla değiştirebilirsin!” and its English equivalent. Three steps follow: upload a photo to the Codex/Claude Code conversation used for setup; request a prepared preview; approve application, then return Home and use the power button to verify sleep-screen appearance. Step one contains its instruction entirely in the heading, without a duplicate body paragraph; the heading has no bottom margin. The other two steps retain their explanations.
 
 The steps reuse the current outlined-number timeline: 42px circles, 1px connectors, 68px text indentation and 34px gaps; at 600px and below, circles become 34px, indentation 53px and gaps 28px. These instructional number circles are an additional functional use of circles, alongside existing date/status treatments. No upload field is added to the website.
 

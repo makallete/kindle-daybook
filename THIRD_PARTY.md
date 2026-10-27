@@ -8,3 +8,7 @@
 - Kindle and Paperwhite are Amazon trademarks. This is an independent community project, not an Amazon product.
 
 The MIT license covers this project's original sources, not third-party software, fonts, services or Amazon system files. No Amazon JARs, firmware, books or private account data are distributed.
+
+## GitHub mark
+
+The website uses the GitHub mark from [Primer Octicons](https://github.com/primer/octicons), under the MIT license. A copy is in `website/assets/GitHub-Octicons-LICENSE.txt`.
