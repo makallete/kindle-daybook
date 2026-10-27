@@ -1,0 +1,7 @@
+SCREEN_TOKEN=replace-with-random-32-byte-token
+ICAL_URL=https://example.com/calendar.ics
+# Optional
+# SHARED_ICAL_URL=https://example.com/shared.ics
+# GOOGLE_MAPS_API_KEY=
+# HOME_ADDRESS=
+# WORK_ADDRESS=

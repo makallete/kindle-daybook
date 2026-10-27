@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Eski Kindle’ını takvim, hava durumu ve yol durumu ekranına dönüştür. Açık kaynak Kindle Daybook: Türkçe ve İngilizce kurulum rehberi."><meta property="og:title" content="Kindle Daybook"><meta property="og:description" content="Eski Kindle. Yeni bir gündelik hayat. Açık kaynak kişisel bilgi ekranı."><meta name="theme-color" content="#ffffff"><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="native-home.css"><title>Kindle Daybook — Eski Kindle, yeni bir günlük hayat</title></head>
+<body><a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
+<header class="site-header"><a class="wordmark" href="#" aria-label="Kindle Daybook"><img src="favicon.svg" alt="" width="25" height="30">Kindle Daybook</a><nav aria-label="Main"><a href="#guide" data-i18n="navGuide">Kurulum</a><a class="source-link" href="https://github.com/makallete/kindle-daybook">GitHub <span aria-hidden="true">↗</span></a><div class="languages" aria-label="Language"><button type="button" data-lang="tr" aria-pressed="true">TR</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div></nav></header>
+<main id="main"><section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><h1 id="hero-title" data-i18n-html="hero">Eski Kindle.<br>Yeni bir<br>gündelik hayat.</h1><p class="hero-intro" data-i18n="intro">Rafa kaldırdığın Kindle; gününü, havayı ve eve dönüş yolunu göstersin. Kendi hesabında çalışan, adını senin koyduğun bir ekran.</p><div class="actions"><a class="button" href="#guide" data-i18n="start">Kendi ekranını kur <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/makallete/kindle-daybook" data-i18n="source">Kaynak kodu incele ↗</a></div><p class="release-note"><span class="status-dot" aria-hidden="true"></span><span data-i18n="release">v0.1.0-alpha · Paperwhite 2 üzerinde geliştirildi.</span></p></div>
+<div class="hero-device"><div class="device-shell"><div class="device-screen"><iframe id="preview" src="demo.html" title="Örnek verilerle Kindle Daybook" loading="eager"></iframe></div><div class="device-bottom" aria-hidden="true">kindle</div></div><p class="device-caption" data-i18n="demoNote">Örnek veriler. Takvim ve yol bilgileri canlı değildir.</p></div></section>
+<section class="intro-strip" aria-label="Features"><p data-i18n="featureA">Takvimin. Ortak takvimlerin.</p><p data-i18n="featureB">Üç günlük hava durumu.</p><p data-i18n="featureC">Evden işe. İşten eve.</p></section>
+<section class="ownership section" aria-labelledby="ownership-title"><div><h2 id="ownership-title" data-i18n-html="ownTitle">Bu ekranın adı<br>sana kalmış.</h2><p data-i18n="ownCopy">“Benim Günüm”, “Mutfak” ya da sadece adın. Kaynak kod açık; senin takvimin senin Cloudflare hesabında. Bilgisayarın kapalıyken de Kindle, Wi-Fi üzerinden veriyi alır.</p><label for="display-name" data-i18n="nameLabel">Ekranına bir ad ver</label><div class="name-control"><input id="display-name" value="Daybook" maxlength="40" autocomplete="off"><button id="apply-name" type="button" data-i18n="tryName">Ekranda dene</button></div><p class="field-note" data-i18n="nameNote">Bu yalnızca bir önizleme. Hiçbir bilgi gönderilmez.</p><p id="name-status" class="sr-only" role="status"></p></div><div class="how-it-works"><h3 data-i18n="flowTitle">Küçük bir ekran, kendi düzenin.</h3><div class="flow-row"><strong>Kindle</strong><span data-i18n="flowDevice">Günlük bilgini gösterir.</span></div><div class="flow-connector" aria-hidden="true">↕</div><div class="flow-row"><strong>Cloudflare Worker</strong><span data-i18n="flowServer">Senin hesabında verileri bir araya getirir.</span></div><div class="flow-connector" aria-hidden="true">↕</div><div class="flow-row"><strong>iCal / Open-Meteo / Google Routes</strong><span data-i18n="flowSources">Takvim, hava ve isteğe bağlı trafik.</span></div></div></section>
+<section id="native-home" class="section native-home" aria-labelledby="native-home-title">
+  <div class="section-heading">
+    <h2 id="native-home-title" data-i18n-html="nativeTitle">Ana ekrandan<br>tek dokunuş.</h2>
+    <p data-i18n="nativeIntro">Store düğmesini kendi ekranının kısayoluna dönüştür. Öneri panellerini kaldır, son okuduklarına daha fazla yer aç.</p>
+  </div>
+  <div class="native-comparison">
+    <figure class="native-example">
+      <figcaption><strong data-i18n="nativeBefore">Önce</strong><span data-i18n="nativeStock">Standart Home düzeni</span></figcaption>
+      <div class="native-screen" role="img" aria-label="Standard Home: Store shortcut, books and recommendation panels">
+        <div class="native-status"><span>Kindle</span><span>08:15</span></div>
+        <div class="native-toolbar">
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8v10h-6v-7H9v7H3Z"/></svg><span data-i18n="nativeHome">Home</span></span>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 4-8 8 8 8M3 12h19"/></svg><span data-i18n="nativeBack">Geri</span></span>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h3l3 12h11l2-9H7M10 20h.01M19 20h.01"/></svg><span>Store</span></span>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="m16 16 6 6"/></svg><span data-i18n="nativeSearch">Ara</span></span>
+        </div>
+        <div class="native-content">
+          <div class="native-library-heading">YOUR LIBRARY</div>
+          <div class="native-stock-library">
+            <div class="native-book"><span data-i18n="nativeNovel">Bir roman</span></div>
+            <div class="native-book"><span data-i18n="nativeEssays">Denemeler</span></div>
+            <div class="native-book"><span data-i18n="nativeStories">Öyküler</span></div>
+          </div>
+          <div class="native-stock-panel"><strong>YOUR READING LISTS</strong><div></div><div></div></div>
+          <div class="native-stock-panel"><strong>FIND YOUR NEXT GREAT READ</strong><div></div><div></div></div>
+          <div class="native-stock-panel native-stock-panel-last"><strong>DID YOU KNOW?</strong><div></div></div>
+        </div>
+      </div>
+    </figure>
+    <figure class="native-example">
+      <figcaption><strong data-i18n="nativeAfter">Sonra</strong><span data-i18n="nativeYours">Ekranın ve son okudukların</span></figcaption>
+      <div class="native-screen native-screen-after" role="img" aria-label="Clean Home: Daybook shortcut, a pinned app cover and four recent books">
+        <div class="native-status"><span>Kindle</span><span>08:15</span></div>
+        <div class="native-toolbar">
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8v10h-6v-7H9v7H3Z"/></svg><span data-i18n="nativeHome">Home</span></span>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 4-8 8 8 8M3 12h19"/></svg><span data-i18n="nativeBack">Geri</span></span>
+          <span class="native-shortcut"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="17" rx="1"/><path d="M7 2v6m10-6v6M3 11h18m-13 5h2m4 0h2"/></svg><span class="native-app-name">Daybook</span></span>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="m16 16 6 6"/></svg><span data-i18n="nativeSearch">Ara</span></span>
+        </div>
+        <div class="native-content">
+          <div class="native-library-heading">YOUR LIBRARY</div>
+          <div class="native-clean-library">
+            <div class="native-app-cover"><svg viewBox="0 0 80 95" aria-hidden="true"><rect x="8" y="11" width="64" height="76" rx="3"/><path d="M24 3v17m32-17v17M8 33h64M25 49h7m16 0h7M25 65h7m16 0h7"/></svg><strong class="native-app-name">Daybook</strong></div>
+            <div class="native-recent-books">
+              <div class="native-book"><span data-i18n="nativeNovel">Bir roman</span></div>
+              <div class="native-book"><span data-i18n="nativeEssays">Denemeler</span></div>
+              <div class="native-book"><span data-i18n="nativeStories">Öyküler</span></div>
+              <div class="native-book"><span data-i18n="nativeNotes">Notlar</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <p class="native-schematic-note" data-i18n="nativeSchematic">Şematik gösterim. Kitap adları örnektir; gerçek cihaz ekran görüntüsü değildir.</p>
+  <div class="native-outcomes">
+    <p><strong data-i18n="nativeShortcutTitle">Store yerine uygulaman.</strong> <span data-i18n="nativeShortcutCopy">Takvim simgesi ve uygulama adıyla ekranına doğrudan ulaş.</span></p>
+    <p><strong data-i18n="nativeHomeTitle">Daha sade bir Home.</strong> <span data-i18n="nativeHomeCopy">Öneri panelleri yerine sabit uygulama kapağı ve son okunan kitaplar.</span></p>
+    <p><strong data-i18n="nativeArchiveTitle">Kurulum artıklarını arşivle.</strong> <span data-i18n="nativeArchiveCopy">Bilinen geçici dosyalar yedeğe taşınır. Kitaplar ve çalışan jailbreak bileşenleri korunur; hız artışı vaat edilmez.</span></p>
+  </div>
+  <p class="field-note" data-i18n="nativeFirmwareNote">Bu bölüm isteğe bağlıdır ve doğrulanmış firmware’e özel değişiklikler içerir. Önce yedekle; uyumluluk doğrulanamazsa işlemi durdur.</p>
+</section>
+
+<section id="guide" class="section guide" aria-labelledby="guide-title"><div class="section-heading"><h2 id="guide-title" data-i18n="guideTitle">Birlikte, adım adım.</h2><p data-i18n="guideIntro">Önce cihazını tanı. Sonra jailbreak, kendi sunucun ve ekranın. Trafiği en son, istersen ekle.</p></div>
+<div class="compatibility"><h3 data-i18n="compatTitle">Senin Kindle’ın hangisi?</h3><div class="compat-inputs"><label><span data-i18n="model">Model</span><select id="device-model"><option value="pw2">Paperwhite 2 (2013)</option><option value="other" data-i18n="otherModel">Başka model / bilmiyorum</option></select></label><label><span data-i18n="firmware">Yazılım sürümü</span><input id="firmware" value="5.12.2.2" autocomplete="off" spellcheck="false"></label></div><p id="compat-result" role="status"></p><p class="field-note" data-i18n="alphaNote">İlk topluluk sürümü. Çalışan uygulama gerçek cihazda doğrulandı; yeni kurucu ikinci, temiz bir cihazda henüz denenmedi. Kurucu şu an yalnızca 90D4 PW2 varyantını kabul eder.</p></div>
+<div id="steps" class="steps"></div>
+<div class="download-row"><div><h3 data-i18n="downloadTitle">Kurulum dosyaları bir arada.</h3><p data-i18n="downloadCopy">Sunucu, kurucu, Türkçe ve İngilizce rehber. Kendi anahtarlarını ve adreslerini sen eklersin.</p></div><a class="button" download href="kindle-daybook-v0.1.0-alpha.zip" data-i18n="download">v0.1.0-alpha indir ↓</a></div>
+</section>
+<section class="section details-section"><div class="section-heading"><h2 data-i18n="detailsTitle">Kurarken aklında olsun.</h2><p data-i18n="detailsIntro">Neyin çalıştığını, neyin isteğe bağlı olduğunu açıkça bil.</p></div><div id="faq" class="faq"></div></section>
+<section class="closing"><h2 data-i18n-html="closingTitle">Bir ekranı kurtar.<br>Kendine göre değiştir.</h2><a class="text-link" href="https://github.com/makallete/kindle-daybook" data-i18n="contribute">GitHub’da katkıda bulun ↗</a><p data-i18n="closingCopy">Yeni cihaz deneyimleri, hata bildirimleri ve daha iyi fikirler için depo açık.</p></section></main>
+<footer><a class="wordmark" href="#">Kindle Daybook</a><div><span>Developed by makallete</span><a href="https://github.com/makallete/kindle-daybook/blob/main/LICENSE">MIT License</a></div><p data-i18n="independent">Bağımsız bir topluluk projesi. Amazon ile bağlantılı değildir.</p></footer><script src="app.js"></script></body></html>

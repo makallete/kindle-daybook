@@ -1,0 +1,17 @@
+{
+  "name": "kindle-daybook-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "node --test"
+  },
+  "dependencies": {
+    "ical.js": "^2.2.1",
+    "wrangler": "^4.152.0"
+  },
+  "version": "0.1.0",
+  "license": "MIT"
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<widget id="org.kindledaybook.dashboard" version="1.0" viewmodes="application" xmlns="http://www.w3.org/ns/widgets" xmlns:kindle="http://kindle.amazon.com/ns/widget-extensions">
+  <name xml:lang="en">Daybook</name>
+  <content src="index.html" />
+  <kindle:chrome><kindle:asset key="configureSearchBar" value="none" /></kindle:chrome>
+  <kindle:network>
+    <kindle:asset key="user-agent" value="Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/531.2+ Version/5.0 Safari/533.2+ Kindle/3.0+" />
+    <kindle:asset key="allowTlsFallback" value="true" />
+  </kindle:network>
+  <feature name="http://kindle.amazon.com/apis" required="true">
+    <param name="appmgr" value="yes" /><param name="chrome" value="yes" />
+    <param name="winmgrUtils" value="yes" /><param name="net" value="yes" /><param name="messaging" value="yes" />
+  </feature>
+  <kindle:messaging><kindle:app name="com.lab126.pillow" value="yes" /></kindle:messaging>
+</widget>

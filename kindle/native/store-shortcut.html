@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Daybook</title>
+<script src="/var/local/mesquite/shared/javascripts/Kindle.js"></script>
+<script src="/var/local/mesquite/shared/javascripts/logging.js"></script>
+<script src="/var/local/mesquite/shared/javascripts/eventing.js"></script>
+<script src="/var/local/mesquite/shared/javascripts/object.js"></script>
+<script src="/var/local/mesquite/shared/javascripts/applicationManager.js"></script>
+<script>
+Kindle.use(function (b) {
+    b.applicationManager.addEventListener('go', function () {
+        kindle.appmgr.start('org.kindledaybook.launcher');
+    });
+});
+</script></head><body style="margin:0;background:#fff"></body></html>

@@ -1,0 +1,17 @@
+node_modules/
+.dev.vars
+.env*
+!.env.example
+.wrangler/
+*.log
+__pycache__/
+.DS_Store
+kindle/tools/
+.openai/
+site/.openai/
+*.tar.gz
+site/
+.impeccable/
+native-local/
+native-originals/
+worker/work/
